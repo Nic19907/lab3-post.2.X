@@ -1,0 +1,245 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/lab3-post.2.o
+code CODE 0 0 0 113 2
+udata_shr COMMON 1 70 70 5 1
+loopPrincipal code 0 0 0 69 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 113-1FFF 2
+ENTRY 113-1FFF 2
+IDLOC 2000-2003 2
+CODE 113-1FFF 2
+COMMON 75-7F 1
+EEDATA 2100-21FF 2
+STRCODE 113-1FFF 2
+STRING 113-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/lab3-post.2.o
+0 loopPrincipal code >96:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+A loopPrincipal code >99:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+B loopPrincipal code >100:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+C loopPrincipal code >101:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+D loopPrincipal code >102:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+F loopPrincipal code >105:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+11 loopPrincipal code >106:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+12 loopPrincipal code >107:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+13 loopPrincipal code >109:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+15 loopPrincipal code >110:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+16 loopPrincipal code >111:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+17 loopPrincipal code >112:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+18 loopPrincipal code >115:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+19 loopPrincipal code >116:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+1A loopPrincipal code >118:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+1C loopPrincipal code >119:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+1D loopPrincipal code >120:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+1E loopPrincipal code >121:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+1F loopPrincipal code >122:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+20 loopPrincipal code >123:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+21 loopPrincipal code >126:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+23 loopPrincipal code >127:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+24 loopPrincipal code >128:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+25 loopPrincipal code >129:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+26 loopPrincipal code >130:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+27 loopPrincipal code >131:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+28 loopPrincipal code >134:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+2A loopPrincipal code >135:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+2B loopPrincipal code >136:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+2C loopPrincipal code >137:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+2D loopPrincipal code >138:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+2E loopPrincipal code >139:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+2F loopPrincipal code >141:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+31 loopPrincipal code >142:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+32 loopPrincipal code >148:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+33 loopPrincipal code >149:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+34 loopPrincipal code >150:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+35 loopPrincipal code >157:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+36 loopPrincipal code >158:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+37 loopPrincipal code >159:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+38 loopPrincipal code >160:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+39 loopPrincipal code >162:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+3A loopPrincipal code >163:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+3B loopPrincipal code >164:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+3C loopPrincipal code >167:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+3D loopPrincipal code >168:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+3E loopPrincipal code >169:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+3F loopPrincipal code >170:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+40 loopPrincipal code >173:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+41 loopPrincipal code >174:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+42 loopPrincipal code >175:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+43 loopPrincipal code >176:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+44 loopPrincipal code >177:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+45 loopPrincipal code >178:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+46 loopPrincipal code >179:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+47 loopPrincipal code >180:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+48 loopPrincipal code >182:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+49 loopPrincipal code >199:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+4A loopPrincipal code >200:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+4B loopPrincipal code >201:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+4C loopPrincipal code >202:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+4D loopPrincipal code >204:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+4E loopPrincipal code >205:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+4F loopPrincipal code >206:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+50 loopPrincipal code >207:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+51 loopPrincipal code >210:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+52 loopPrincipal code >211:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+53 loopPrincipal code >212:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+54 loopPrincipal code >213:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+55 loopPrincipal code >214:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+56 loopPrincipal code >217:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+57 loopPrincipal code >218:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+58 loopPrincipal code >220:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+59 loopPrincipal code >221:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+5A loopPrincipal code >222:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+5B loopPrincipal code >223:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+5C loopPrincipal code >224:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+5D loopPrincipal code >227:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+5E loopPrincipal code >228:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+5F loopPrincipal code >229:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+60 loopPrincipal code >230:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+61 loopPrincipal code >231:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+62 loopPrincipal code >232:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+63 loopPrincipal code >233:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+64 loopPrincipal code >236:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+65 loopPrincipal code >237:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+66 loopPrincipal code >238:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+67 loopPrincipal code >239:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+68 loopPrincipal code >240:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+0 code CODE >63:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+0 code CODE >65:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+1 code CODE >70:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+100 code CODE >72:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+101 code CODE >73:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+102 code CODE >75:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+103 code CODE >76:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+104 code CODE >77:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+105 code CODE >78:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+106 code CODE >79:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+107 code CODE >80:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+108 code CODE >81:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+109 code CODE >82:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+10A code CODE >83:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+10B code CODE >84:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+10C code CODE >85:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+10D code CODE >86:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+10E code CODE >87:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+10F code CODE >88:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+110 code CODE >89:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+111 code CODE >90:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+112 code CODE >91:C:\Users\nicou\OneDrive\Documents\2021\2do_semestre\P_micros_1\lab-3\lab3-post.2.X\lab3-post.2.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 113 0 ABS 0 - -
+__Hspace_1 75 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__HloopPrincipal D2 0 code 0 loopPrincipal -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 75 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__LloopPrincipal 0 0 code 0 loopPrincipal -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_shr 1 70 70 5 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
